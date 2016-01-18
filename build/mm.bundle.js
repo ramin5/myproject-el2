@@ -2315,10 +2315,10 @@ angular.module('mm.core')
                     }
                     return language;
                 }, function() {
-                    return mmCoreConfigConstants.default_lang || 'en';
+                    return mmCoreConfigConstants.default_lang || 'fa';
                 });
             } catch(err) {
-                return mmCoreConfigConstants.default_lang || 'en';
+                return mmCoreConfigConstants.default_lang || 'fa';
             }
         }).then(function(language) {
             currentLanguage = language;
@@ -15292,7 +15292,7 @@ angular.module('mm.core')
     "versionname" : "2.7",
     "cache_expiration_time" : 300000,
     "default_lang" : "fa",
-    "languages": {"en": "English", "fa": "فارسی"},
+    "languages": {"fa": "فارسی", "en": "English"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {"student": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "student", "password": "password"}, "teacher": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "teacher", "password": "password"}, "cva": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "student", "password": "password"}},

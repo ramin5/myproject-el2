@@ -73,11 +73,11 @@ angular.module('mm.core')
                     return language;
                 }, function() {
                     // Error getting locale. Use default language.
-                    return mmCoreConfigConstants.default_lang || 'en';
+                    return mmCoreConfigConstants.default_lang || 'fa';
                 });
             } catch(err) {
                 // Error getting locale. Use default language.
-                return mmCoreConfigConstants.default_lang || 'en';
+                return mmCoreConfigConstants.default_lang || 'fa';
             }
         }).then(function(language) {
             currentLanguage = language; // Save it for later.
