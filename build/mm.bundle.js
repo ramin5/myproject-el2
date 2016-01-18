@@ -3104,13 +3104,13 @@ angular.module('mm.core')
                     return deprecatedFunctions[method];
                 } else {
                     $log.warn("You are using deprecated Web Services. " +
-                        "Your remote site seems to be outdated, consider upgrade it to the latest Moodle version.");
+                        "Your remote site seems to be outdated, consider upgrade it to the latest HiLearning version.");
                 }
             } else if (!site.wsAvailable(method)) {
                 for (var oldFunc in deprecatedFunctions) {
                     if (deprecatedFunctions[oldFunc] === method && site.wsAvailable(oldFunc)) {
                         $log.warn("Your remote site doesn't support the function " + method +
-                            ", it seems to be outdated, consider upgrade it to the latest Moodle version.");
+                            ", it seems to be outdated, consider upgrade it to the latest HiLearning version.");
                         return oldFunc;
                     }
                 }
@@ -3691,7 +3691,7 @@ angular.module('mm.core')
                 if (!siteid) {
                     return;
                 }
-                $log.debug('Migrating site from MoodleMobile 1: ' + siteid);
+                $log.debug('Migrating site from HiLearningMobile 1: ' + siteid);
                 var site = localStorage.getItem('sites-'+siteid),
                     infos;
                 if (site) {
@@ -4104,11 +4104,11 @@ angular.module('mm.core')
         };
                 self.getDocsUrl = function(release, page) {
             page = page || 'Mobile_app';
-            var docsurl = 'https://docs.moodle.org/en/' + page;
+            var docsurl = 'https://www.hivitrin.com/' + page;
             if (typeof release != 'undefined') {
                 var version = release.substr(0, 3).replace(".", "");
                 if (parseInt(version) >= 24) {
-                    docsurl = docsurl.replace('https://docs.moodle.org/', 'https://docs.moodle.org/' + version + '/');
+                    docsurl = docsurl.replace('https://www.hivitrin.com/', 'https://www.hivitrin.com/' + version + '/');
                 }
             }
             return $mmLang.getCurrentLanguage().then(function(lang) {
@@ -15185,7 +15185,7 @@ angular.module('mm.addons.pushnotifications')
         return $q.reject();
     };
         self.registerDeviceOnMoodle = function() {
-        $log.debug('Register device on Moodle.');
+        $log.debug('Register device on HiLearning.');
         if (!$mmSite.isLoggedIn() || !pushID || !$mmApp.isDevice()) {
             return $q.reject();
         }
@@ -15204,7 +15204,7 @@ angular.module('mm.addons.pushnotifications')
         if (!site || !$mmApp.isDevice()) {
             return $q.reject();
         }
-        $log.debug('Unregister device on Moodle: ' + site.id);
+        $log.debug('Unregister device on HiLearning: ' + site.id);
         var data = {
             appid: mmCoreConfigConstants.app_id,
             uuid:  $cordovaDevice.getUUID()
@@ -15291,11 +15291,11 @@ angular.module('mm.core')
     "versioncode" : "2010",
     "versionname" : "2.1",
     "cache_expiration_time" : 300000,
-    "default_lang" : "en",
-    "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "de": "Deutsch","en": "English", "es": "Español", "es-mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "pl": "Polski", "pt-br": "Português - Brasil", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh-cn" : "简体中文", "zh-tw" : "正體中文"},
+    "default_lang" : "fa",
+    "languages": {"en": "English", "fa": "فارسی", "fr"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
-    "demo_sites": {"student": {"url": "http://school.demo.moodle.net", "username": "student", "password": "moodle"}, "teacher": {"url": "http://school.demo.moodle.net", "username": "teacher", "password": "moodle"}, "cva": {"url": "http://mm.cvaconsulting.com/moodle", "username": "student", "password": "student"}},
+    "demo_sites": {"student": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "student", "password": "password"}, "teacher": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "teacher", "password": "password"}, "cva": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "student", "password": "password"}},
     "gcmpn": "694767596569"
 }
 );

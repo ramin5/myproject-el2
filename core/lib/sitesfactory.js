@@ -322,7 +322,7 @@ angular.module('mm.core')
         };
 
         /**
-         * Fetch site info from the Moodle site.
+         * Fetch site info from the HiLearning site.
          *
          * @return {Promise} A promise to be resolved when the site info is retrieved.
          */
@@ -346,7 +346,7 @@ angular.module('mm.core')
         };
 
         /**
-         * Read some data from the Moodle site using WS. Requests are cached by default.
+         * Read some data from the HiLearning site using WS. Requests are cached by default.
          *
          * @param  {String} read  WS method to use.
          * @param  {Object} data    Data to send to the WS.
@@ -368,7 +368,7 @@ angular.module('mm.core')
         };
 
         /**
-         * Sends some data to the Moodle site using WS. Requests are NOT cached by default.
+         * Sends some data to the HiLearning site using WS. Requests are NOT cached by default.
          *
          * @param  {String} method  WS method to use.
          * @param  {Object} data    Data to send to the WS.
@@ -603,7 +603,7 @@ angular.module('mm.core')
         };
 
         /**
-         * Generic function for adding the wstoken to Moodle urls and for pointing to the correct script.
+         * Generic function for adding the wstoken to HiLearning urls and for pointing to the correct script.
          * Uses $mmUtil.fixPluginfileURL, passing site's token.
          *
          * @param {String} url   The url to be fixed.
@@ -656,10 +656,10 @@ angular.module('mm.core')
         };
 
         /**
-         * Returns the URL to the documentation of the app, based on Moodle version and current language.
+         * Returns the URL to the documentation of the app, based on HiLearning version and current language.
          *
          * @param {String} [page]    Docs page to go to.
-         * @return {Promise}         Promise resolved with the Moodle docs URL.
+         * @return {Promise}         Promise resolved with the HiLearning docs URL.
          */
         Site.prototype.getDocsUrl = function(page) {
             var release = this.infos.release ? this.infos.release : undefined;
@@ -667,7 +667,7 @@ angular.module('mm.core')
         };
 
         /**
-         * Check if the local_mobile plugin is installed in the Moodle site.
+         * Check if the local_mobile plugin is installed in the HiLearning site.
          * This plugin provide extended services.
          *
          * @param {Boolean} retrying True if we're retrying the check.
@@ -728,7 +728,7 @@ angular.module('mm.core')
         };
 
         /**
-         * Check if local_mobile has been installed in Moodle but the app is not using it.
+         * Check if local_mobile has been installed in HiLearning but the app is not using it.
          *
          * @return {Promise} Promise resolved it local_mobile was added, rejected otherwise.
          */
@@ -788,14 +788,14 @@ angular.module('mm.core')
                     return deprecatedFunctions[method];
                 } else {
                     $log.warn("You are using deprecated Web Services. " +
-                        "Your remote site seems to be outdated, consider upgrade it to the latest Moodle version.");
+                        "Your remote site seems to be outdated, consider upgrade it to the latest HiLearning version.");
                 }
             } else if (!site.wsAvailable(method)) {
                 // Method not available. Check if there is a deprecated method to use.
                 for (var oldFunc in deprecatedFunctions) {
                     if (deprecatedFunctions[oldFunc] === method && site.wsAvailable(oldFunc)) {
                         $log.warn("Your remote site doesn't support the function " + method +
-                            ", it seems to be outdated, consider upgrade it to the latest Moodle version.");
+                            ", it seems to be outdated, consider upgrade it to the latest HiLearning version.");
                         return oldFunc; // Use deprecated function.
                     }
                 }

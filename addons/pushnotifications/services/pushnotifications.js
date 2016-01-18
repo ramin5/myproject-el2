@@ -161,8 +161,8 @@ angular.module('mm.addons.pushnotifications')
 
     /**
      * Register a device in Apple APNS (Apple Push Notificaiton System) using the Phonegap PushPlugin.
-     * It also registers the device in the Moodle site using the core_user_add_user_device WebService.
-     * We need the device registered in Moodle so we can connect the device with the message output Moode plugin airnotifier.
+     * It also registers the device in the HiLearning site using the core_user_add_user_device WebService.
+     * We need the device registered in HiLearning so we can connect the device with the message output Moode plugin airnotifier.
      *
      * @module mm.addons.pushnotifications
      * @ngdoc method
@@ -203,7 +203,7 @@ angular.module('mm.addons.pushnotifications')
     };
 
     /**
-     * Registers a device on current Moodle site.
+     * Registers a device on current HiLearning site.
      *
      * @module mm.addons.pushnotifications
      * @ngdoc method
@@ -211,7 +211,7 @@ angular.module('mm.addons.pushnotifications')
      * @return {Promise}      Promise resolved when device is registered.
      */
     self.registerDeviceOnMoodle = function() {
-        $log.debug('Register device on Moodle.');
+        $log.debug('Register device on HiLearning.');
 
         if (!$mmSite.isLoggedIn() || !pushID || !$mmApp.isDevice()) {
             return $q.reject();
@@ -230,7 +230,7 @@ angular.module('mm.addons.pushnotifications')
     };
 
     /**
-     * Unregisters a device from a certain Moodle site.
+     * Unregisters a device from a certain HiLearning site.
      *
      * @module mm.addons.pushnotifications
      * @ngdoc method
@@ -244,7 +244,7 @@ angular.module('mm.addons.pushnotifications')
             return $q.reject();
         }
 
-        $log.debug('Unregister device on Moodle: ' + site.id);
+        $log.debug('Unregister device on HiLearning: ' + site.id);
 
         var data = {
             appid: mmCoreConfigConstants.app_id,

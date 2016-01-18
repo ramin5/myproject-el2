@@ -108,7 +108,7 @@ angular.module('mm.core.course')
     }
 
     /**
-     * Get a module from Moodle.
+     * Get a module from HiLearning.
      *
      * @module mm.core.course
      * @ngdoc method

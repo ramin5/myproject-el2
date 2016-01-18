@@ -14,7 +14,7 @@
 
 angular.module('mm.core.login')
 
-.constant('mmLoginSSOCode', 2) // This code is returned by local_mobile Moodle plugin if SSO in browser is required.
+.constant('mmLoginSSOCode', 2) // This code is returned by local_mobile HiLearning plugin if SSO in browser is required.
 .constant('mmLoginLaunchSiteURL', 'mmLoginLaunchSiteURL')
 .constant('mmLoginLaunchPassport', 'mmLoginLaunchPassport')
 

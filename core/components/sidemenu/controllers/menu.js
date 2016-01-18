@@ -44,7 +44,7 @@ angular.module('mm.core.sidemenu')
         $timeout(function() {
             $scope.siteinfo = $mmSite.getInfo();
 
-            // Update docs URL, maybe the Moodle release has changed.
+            // Update docs URL, maybe the HiLearning release has changed.
             $mmSite.getDocsUrl().then(function(docsurl) {
                 $scope.docsurl = docsurl;
             });

@@ -270,17 +270,17 @@ angular.module('mm.core')
     }
 
     /**
-     * Check for the minimum required version (Moodle 2.4).
+     * Check for the minimum required version (HiLearning 2.1).
      *
-     * @param {Array} sitefunctions List of functions of the Moodle site.
-     * @return {Boolean}            True if the moodle version is valid, false otherwise.
+     * @param {Array} sitefunctions List of functions of the HiLearning site.
+     * @return {Boolean}            True if the HiLearning version is valid, false otherwise.
      */
     function isValidMoodleVersion(infos) {
         if (!infos) {
             return false;
         }
 
-        var minVersion = 2012120300, // Moodle 2.4 version.
+        var minVersion = 2012120300, // HiLearning 2.4 version.
             minRelease = "2.4";
 
         // Try to validate by version.
