@@ -341,7 +341,7 @@ angular.module('mm.addons.mod_imscp')
      */
     self.isPluginEnabled = function() {
         var version = $mmSite.getInfo().version;
-        // Require HiLearning 2.1.
+        // Require HiLearning 2.7.
         return version && (parseInt(version) >= 2015051100) && $mmSite.canDownloadFiles();
     };
 

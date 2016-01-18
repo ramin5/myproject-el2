@@ -15288,11 +15288,11 @@ angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
     "app_id" : "com.hivitrin.hilearningmobile",
-    "versioncode" : "2010",
-    "versionname" : "2.1",
+    "versioncode" : "2008",
+    "versionname" : "2.7",
     "cache_expiration_time" : 300000,
     "default_lang" : "fa",
-    "languages": {"en": "English", "fa": "فارسی", "fr"},
+    "languages": {"en": "English", "fa": "فارسی"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {"student": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "student", "password": "password"}, "teacher": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "teacher", "password": "password"}, "cva": {"url": "http://ip2.tpazarakhsh.ir:88", "username": "student", "password": "password"}},

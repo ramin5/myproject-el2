@@ -1,7 +1,7 @@
 {
     "app_id" : "com.hivitrin.hilearningmobile",
-    "versioncode" : "2010",
-    "versionname" : "2.1",
+    "versioncode" : "2008",
+    "versionname" : "2.7",
     "cache_expiration_time" : 300000,
     "default_lang" : "fa",
     "languages": {"fa": "فارسی", "en": "English"},

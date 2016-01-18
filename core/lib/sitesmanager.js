@@ -270,7 +270,7 @@ angular.module('mm.core')
     }
 
     /**
-     * Check for the minimum required version (HiLearning 2.1).
+     * Check for the minimum required version (HiLearning 2.4).
      *
      * @param {Array} sitefunctions List of functions of the HiLearning site.
      * @return {Boolean}            True if the HiLearning version is valid, false otherwise.
