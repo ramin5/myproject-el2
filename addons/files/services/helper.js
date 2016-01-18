@@ -39,7 +39,7 @@ angular.module('mm.addons.files')
         var width  =  $window.innerWidth  - 200;
         var height =  $window.innerHeight - 200;
 
-        // iPad popOver, see https://tracker.moodle.org/browse/MOBILE-208
+        // iPad popOver, see https://tracker.hivitrin.com
         var popover = new CameraPopoverOptions(10, 10, width, height, Camera.PopoverArrowDirection.ARROW_ANY);
         $cordovaCamera.getPicture({
             quality: 50,

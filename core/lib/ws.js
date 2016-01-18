@@ -29,7 +29,7 @@ angular.module('mm.core')
     var self = {};
 
     /**
-     * A wrapper function for a moodle WebService call.
+     * A wrapper function for a WebService call.
      *
      * @module mm.core
      * @ngdoc method
@@ -66,7 +66,7 @@ angular.module('mm.core')
 
         return $http.post(siteurl, ajaxData).then(function(data) {
 
-            // Some moodle web services return null.
+            // Some web services return null.
             // If the responseExpected value is set then so long as no data
             // is returned, we create a blank object.
             if ((!data || !data.data) && !preSets.responseExpected) {
@@ -134,7 +134,7 @@ angular.module('mm.core')
     }
 
     /**
-     * Downloads a file from Moodle using Cordova File API.
+     * Downloads a file using Cordova File API.
      * @todo Use Web Workers.
      *
      * @param {String}   url        Download url.

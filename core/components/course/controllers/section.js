@@ -91,7 +91,7 @@ angular.module('mm.core.course')
 
                     $scope.sections = sections;
 
-                    // Add log in Moodle.
+                    // Add log in HiLearning.
                     $mmSite.write('core_course_view_course', {
                         courseid: courseid,
                         sectionnumber: sectionnumber

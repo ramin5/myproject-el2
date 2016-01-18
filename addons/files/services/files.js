@@ -336,7 +336,7 @@ angular.module('mm.addons.files')
      * Return whether or not the plugin is enabled. Plugin is enabled if:
      *     - Site supports core_files_get_files
      *     or
-     *     - User has capability moodle/user:manageownfiles and WS allows uploading files.
+     *     - User has capability hilearning/user:manageownfiles and WS allows uploading files.
      *
      * @module mm.addons.files
      * @ngdoc method

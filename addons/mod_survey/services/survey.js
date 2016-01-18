@@ -276,7 +276,7 @@ angular.module('mm.addons.mod_survey')
     };
 
     /**
-     * Send survey answers to Moodle.
+     * Send survey answers to HiLearning.
      *
      * @module mm.addons.mod_survey
      * @ngdoc method

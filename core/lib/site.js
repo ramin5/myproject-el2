@@ -152,7 +152,7 @@ angular.module('mm.core')
      */
 
     /**
-     * Fetch site info from the Moodle site.
+     * Fetch site info from the HiLearning site.
      *
      * @module mm.core
      * @ngdoc method
@@ -160,7 +160,7 @@ angular.module('mm.core')
      * @return {Promise} A promise to be resolved when the site info is retrieved.
      * #description
      *
-     * Fetch site info from the current Moodle site.
+     * Fetch site info from the current HiLearning site.
      */
 
     /**
@@ -173,7 +173,7 @@ angular.module('mm.core')
      * @return {Promise}        Promise to be resolved when the request is finished.
      * #description
      *
-     * Read some data from the current Moodle site using WS. Requests are cached by default.
+     * Read some data from the current HiLearning site using WS. Requests are cached by default.
      */
 
     /**
@@ -186,7 +186,7 @@ angular.module('mm.core')
      * @return {Promise}        Promise to be resolved when the request is finished.
      * #description
      *
-     * Sends some data to the current Moodle site using WS. Requests are NOT cached by default.
+     * Sends some data to the current HiLearning site using WS. Requests are NOT cached by default.
      */
 
     /**
@@ -274,7 +274,7 @@ angular.module('mm.core')
      * @return {String}      Fixed URL.
      * @description
      *
-     * Generic function for adding the wstoken to Moodle urls and for pointing to the correct script.
+     * Generic function for adding the wstoken to HiLearning urls and for pointing to the correct script.
      * Uses $mmUtil.fixPluginfileURL, passing current site's token.
      */
 
@@ -313,10 +313,10 @@ angular.module('mm.core')
      * @ngdoc method
      * @name $mmSite#getDocsUrl
      * @param {String} [page]    Docs page to go to.
-     * @return {Promise}         Promise resolved with the Moodle docs URL.
+     * @return {Promise}         Promise resolved with the HiLearning docs URL.
      * @description
      *
-     * Returns the URL to the documentation of the app, based on Moodle version and current language.
+     * Returns the URL to the documentation of the app, based on HiLearning version and current language.
      */
 
     /**
@@ -329,7 +329,7 @@ angular.module('mm.core')
      *                           - {String} [warning] If defined, code of the warning message.
      * @description
      *
-     * Check if the local_mobile plugin is installed in the Moodle site.
+     * Check if the local_mobile plugin is installed in the HiLearning site.
      * This plugin provide extended services.
      */
 
@@ -340,7 +340,7 @@ angular.module('mm.core')
      * @return {Promise} Promise resolved it local_mobile was added, rejected otherwise.
      * @description
      *
-     * Check if local_mobile has been installed in Moodle but the app is not using it.
+     * Check if local_mobile has been installed in HiLearning but the app is not using it.
      */
 
     // Replicate all Site methods refined in $mmSitesFactory to be used with current site.

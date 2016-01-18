@@ -216,8 +216,8 @@ angular.module('mm.core')
         };
 
         /**
-         * Generic function for adding the wstoken to Moodle urls and for pointing to the correct script.
-         * For download remote files from Moodle we need to use the special /webservice/pluginfile passing
+         * Generic function for adding the wstoken to urls and for pointing to the correct script.
+         * For download remote files we need to use the special /webservice/pluginfile passing
          * the ws token as a get parameter.
          *
          * @module mm.core
@@ -549,23 +549,23 @@ angular.module('mm.core')
         };
 
         /**
-         * Returns the URL to the documentation of the app, based on Moodle version and current language.
+         * Returns the URL to the documentation of the app, based on version and current language.
          *
-         * @param {String} [release] Moodle release.
+         * @param {String} [release] release.
          * @param {String} [page]    Docs page to go to.
-         * @return {Promise}         Promise resolved with the Moodle docs URL.
+         * @return {Promise}         Promise resolved with the docs URL.
          */
         self.getDocsUrl = function(release, page) {
             page = page || 'Mobile_app';
 
-            var docsurl = 'https://docs.moodle.org/en/' + page;
+            var docsurl = 'https://docs.hivitrin.com/' + page;
 
             if (typeof release != 'undefined') {
                 var version = release.substr(0, 3).replace(".", "");
                 // Check is a valid number.
                 if (parseInt(version) >= 24) {
                     // Append release number.
-                    docsurl = docsurl.replace('https://docs.moodle.org/', 'https://docs.moodle.org/' + version + '/');
+                    docsurl = docsurl.replace('https://docs.hivitrin.com/', 'https://docs.hivitrin.com/' + version + '/');
                 }
             }
 

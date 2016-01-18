@@ -16,7 +16,7 @@
 // Using JS confirm function we are sure that the user get notified in a Mobile device.
 // This script should be added at the begining of the index.html and it should only use native javascript functions.
 
-var appVersion = '2.7 (2008)',
+var appVersion = '2.1 (2010)',
     reportInBackgroundName = 'mmCoreReportInBackground',
     errors = [],
     ignoredFiles = ['www/index.html#/site/mod_page', 'www/index.html#/site/mod_resource', 'www/index.html#/site/mm_course-section'];
@@ -72,37 +72,6 @@ window.onerror = function(msg, url, lineNumber) {
         function reportError() {
             if (!errorReported) {
                 errorReported = true;
-                var reportUrl = 'http://prototype.moodle.net/mobile/feedback/mmfeedback.php?message=' + encodeURIComponent(msg) +
-                                '&file=' + encodeURIComponent(url) + '&line=' + encodeURIComponent(lineNumber) + '&appv=' +
-                                encodeURIComponent(appVersion) + '&bg=' + (reportInBackground ? 1 : 0);
-
-                if (window.device) {
-                    reportUrl = reportUrl + '&platform=' + encodeURIComponent(window.device.platform) +
-                                        '&model=' + encodeURIComponent(window.device.model) +
-                                        '&osversion=' + encodeURIComponent(window.device.version) +
-                                        '&cordova=' + encodeURIComponent(window.device.cordova);
-                }
-                if (window.location) {
-                    reportUrl = reportUrl + '&localurl=' + encodeURIComponent(window.location.href);
-                }
-                if (navigator.userAgent) {
-                    reportUrl = reportUrl + '&useragent=' + encodeURIComponent(navigator.userAgent);
-                }
-                if (typeof ydn != 'undefined' && ydn.db && ydn.db.Storage) {
-                    // Detect Storage type by default.
-                    var db = new ydn.db.Storage('test', {}, {});
-                    if (db && db.getType && db.onReady) {
-                        db.onReady(function() {
-                            getStorageAndReport(reportUrl, db);
-                        });
-                        setTimeout(function() {
-                            getStorageAndReport(reportUrl, db);
-                        }, 1000);
-                        return;
-                    }
-                }
-
-                sendError(reportUrl);
             }
         }
 

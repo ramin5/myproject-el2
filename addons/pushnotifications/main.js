@@ -33,7 +33,7 @@ angular.module('mm.addons.pushnotifications', [])
         }
     });
 
-    // Register device on Moodle site when login.
+    // Register device on HiLearning site when login.
     $mmEvents.on(mmCoreEventLogin, function() {
         $mmaPushNotifications.registerDeviceOnMoodle();
     });

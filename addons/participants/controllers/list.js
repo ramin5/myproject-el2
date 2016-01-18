@@ -47,7 +47,7 @@ angular.module('mm.addons.participants')
 
     // Get first participants.
     fetchParticipants(true).then(function() {
-        // Add log in Moodle.
+        // Add log in HiLearning.
         $mmSite.write('core_user_view_user_list', {
             courseid: courseid
         });

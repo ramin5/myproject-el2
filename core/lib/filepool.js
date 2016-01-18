@@ -162,7 +162,7 @@ angular.module('mm.core')
  * The filepool has a very limited understanding of pluginfiles, you should always call
  * {@link $mmUtil#fixPluginfileURL} prior to passing the URL. The reason for this is to
  * allow for any type of URL to be handled here. We can download and cache content
- * that is not served by Moodle. The only little handling of pluginfile is located in
+ * that is not served by HiLearning. The only little handling of pluginfile is located in
  * {@link $mmFilepool#_getFileIdByUrl}.
  */
 .factory('$mmFilepool', function($q, $log, $timeout, $mmApp, $mmFS, $mmWS, $mmSitesManager, $mmEvents, md5, mmFilepoolStore,

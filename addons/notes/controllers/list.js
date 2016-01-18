@@ -47,7 +47,7 @@ angular.module('mm.addons.notes')
     }
 
     fetchNotes().then(function() {
-        // Add log in Moodle.
+        // Add log in HiLearning.
         $mmSite.write('core_notes_view_notes', {
             courseid: courseid,
             userid: 0

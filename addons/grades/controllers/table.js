@@ -36,7 +36,7 @@ angular.module('mm.addons.grades')
         });
     }
     fetchGrades().then(function() {
-        // Add log in Moodle.
+        // Add log in HiLearning.
         $mmSite.write('gradereport_user_view_grade_report', {
             courseid: courseid,
             userid: userid

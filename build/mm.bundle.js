@@ -3313,7 +3313,7 @@ angular.module('mm.core')
                     });
                 }
             } else {
-                return $mmLang.translateAndReject('mm.login.invalidmoodleversion');
+                return $mmLang.translateAndReject('mm.login.invalidhilearningversion');
             }
         });
     };
@@ -15287,9 +15287,9 @@ angular.module('mm.addons.remotestyles')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.moodle.moodlemobile",
-    "versioncode" : "2008",
-    "versionname" : "2.7",
+    "app_id" : "com.hivitrin.hilearningmobile",
+    "versioncode" : "2010",
+    "versionname" : "2.1",
     "cache_expiration_time" : 300000,
     "default_lang" : "en",
     "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "de": "Deutsch","en": "English", "es": "Español", "es-mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "pl": "Polski", "pt-br": "Português - Brasil", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh-cn" : "简体中文", "zh-tw" : "正體中文"},

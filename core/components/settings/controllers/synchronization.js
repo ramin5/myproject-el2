@@ -36,7 +36,7 @@ angular.module('mm.core.settings')
             $mmFilepool.invalidateAllFiles(siteid).finally(function() {
                 $mmSitesManager.getSite(siteid).then(function(site) {
                     return site.invalidateWsCache().then(function() {
-                        // Check if local_mobile was installed to Moodle.
+                        // Check if local_mobile was installed to HiLearning.
                         return site.checkIfLocalMobileInstalledAndNotUsed().then(function() {
                             // Local mobile was added. Throw invalid session to force reconnect and create a new token.
                             $mmEvents.trigger(mmCoreEventSessionExpired, siteid);

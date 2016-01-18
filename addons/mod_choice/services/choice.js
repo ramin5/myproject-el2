@@ -265,7 +265,7 @@ angular.module('mm.addons.mod_choice')
     };
 
     /**
-     * Send a response to a choice to Moodle.
+     * Send a response to a choice to HiLearning.
      *
      * @module mm.addons.mod_choice
      * @ngdoc method

@@ -225,7 +225,7 @@ angular.module('mm.core')
                     });
                 }
             } else {
-                return $mmLang.translateAndReject('mm.login.invalidmoodleversion');
+                return $mmLang.translateAndReject('mm.login.invalidhilearningversion');
             }
         });
     };
@@ -360,7 +360,7 @@ angular.module('mm.core')
             currentSite = site;
             self.login(siteid);
 
-            // Check if local_mobile was installed to Moodle.
+            // Check if local_mobile was installed.
             return site.checkIfLocalMobileInstalledAndNotUsed().then(function() {
                 // Local mobile was added. Throw invalid session to force reconnect and create a new token.
                 $mmEvents.trigger(mmCoreEventSessionExpired, siteid);

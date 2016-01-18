@@ -19,7 +19,7 @@ angular.module('mm.core')
  * @name $mmText
  * @module mm.core
  * @description
- * This service provides functions related to text, like formatting texts from Moodle.
+ * This service provides functions related to text, like formatting texts.
  */
 .factory('$mmText', function($q, $mmLang, $translate) {
 

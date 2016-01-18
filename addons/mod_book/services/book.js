@@ -338,7 +338,7 @@ angular.module('mm.addons.mod_book')
      */
     self.isPluginEnabled = function() {
         var version = $mmSite.getInfo().version;
-        // Require Moodle 2.9.
+        // Require HiLearning 2.6.
         return version && (parseInt(version) >= 2015051100) && $mmSite.canDownloadFiles();
     };
 

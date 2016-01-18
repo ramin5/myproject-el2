@@ -40,7 +40,7 @@ angular.module('mm.addons.mod_folder')
         }
     }
 
-    // Convenience function to fetch folder data from Moodle.
+    // Convenience function to fetch folder data from HiLearning.
     function fetchFolder() {
         return $mmCourse.getModule(courseid, module.id, sectionid).then(function(module) {
             showModuleData(module);

@@ -392,7 +392,7 @@ angular.module('mm.core')
      */
     self.calculateFreeSpace = function() {
         if (ionic.Platform.isIOS() || isHTMLAPI) {
-            // getFreeDiskSpace doesn't work on iOS. See https://tracker.moodle.org/browse/MOBILE-956.
+            // getFreeDiskSpace doesn't work on iOS. See https://tracker.hivitrin.com.
             // Ugly fix: request a file system instance with a minimum size until we get an error.
 
             if (window.requestFileSystem) {
