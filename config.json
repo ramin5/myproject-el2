@@ -7,6 +7,6 @@
     "languages": {"fa": "فارسی", "en": "English"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
-    "demo_sites": {"student": {"url": "http://school.demo.moodle.net", "username": "student", "password": "password"}, "teacher": {"url": "http://school.demo.moodle.net", "username": "teacher", "password": "moodle"}, "cva": {"url": "http://mm.cvaconsulting.com/moodle", "username": "student", "password": "student"}},
+    "demo_sites": {"student": {"url": "http://web.tpazarakhsh.ir:88", "username": "student", "password": "password"}, "teacher": {"url": "http://web.tpazarakhsh.ir:88", "username": "teacher", "password": "password"}, "cva": {"url": "http://web.tpazarakhsh.ir:88", "username": "student", "password": "password"}},
     "gcmpn": "694767596569"
 }
