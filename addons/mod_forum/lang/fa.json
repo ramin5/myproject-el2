@@ -9,6 +9,8 @@
     "forumnodiscussionsyet": "هیچ مباحثه ای در این تالار یافت نشد",
     "group": "گروه",
     "message": "متن پیام",
+    "numdiscussions": "گفتمان {{numdiscussions}}",
+    "numreplies": "پاسخ {{numreplies}}",
     "posttoforum": "طرح در تالار",
     "re": "در پاسخ به:",
     "reply": "ارسال پاسخ",

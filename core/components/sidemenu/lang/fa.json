@@ -1,6 +1,8 @@
 {
-    "changesite": "خروج",
+    "appsettings": "تنظیمات",
     "help": "راهنما",
+    "changesite": "خروج از پرتال",
     "mycourses": "درسهای من",
+    "togglemenu": "تبدیل منو",
     "website": "پایگاه اینترنتی"
 }

@@ -1,10 +1,20 @@
 {
+	"confirmselfenrol": "Are you sure you want to enrol yourself in this course?",
     "enrolme": "من را ثیت نام کن",
+	"errorloadcourses": "An error occurred while loading courses.",
+	"errorsearching": "An error occurred while searching.",
+	"errorselfenrol": "An error occurred while self enroling.",
     "filter": "فیلتر",
+	"filtermycourses": "Filter my courses",
     "frontpage": "صفحهٔ اول",
     "mycourses": "درسهای من",
+	"nosearchresults": "There were no results from your search",
+	"notenrollable": "You can not enrol yourself in this course.",
     "nocourses": "هیچ درسی برای نمایش وجود ندارد",
     "password": "رمز ورود",
     "search": "جستجو",
-    "searchcourses": "جستجو بین درس‌ها"
+    "searchcourses": "جستجو بین درس‌ها",
+	"searchcoursesadvice": "از دکمه جستجوی بین دروس استفاده کنید تا به عنوان مهمان به دروس دسترسی داشته باشید یا در دروسی که مجوز دارید ثبت نام کنید",
+	"selfenrolment": "Self-enrolment",
+	"totalcoursesearchresults": "Total courses: {{$a}}"
 }

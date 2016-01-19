@@ -1,7 +1,21 @@
 {
     "complete": "کامل",
+    "completecourse": "تکمیل درس",
     "completed": "کامل شد",
+    "completiondate": "تاریخ تکمیل",
+    "couldnotloadreport": "خطا در بارگذاری گزارش تکمیل درس، لطفا مجددا تلاش کنید",
+    "criteria": "ضوابط",
+    "criteriagroup": "دسته بندی ضوابط",
+    "criteriarequiredall": "تمام ضوابط زیر الزامی هستند",
+    "criteriarequiredany": "تمام ضوابط زیر الزامی هستند",
     "coursecompletion": "اتمام درس",
+    "inprogress": "در حال انجام",
+    "manualselfcompletion": "Manual self completion",
+    "notyetstarted": "انجام نشده",
+    "pending": "در حال بررسی",
+    "requirement": "شرایط",
     "required": "لازم است",
-    "status": "وضعیت"
+    "requiredcriteria": "ضوابط موردنیاز",
+    "status": "وضعیت",
+    "viewcoursereport": "نمایش گزارش درس"
 }

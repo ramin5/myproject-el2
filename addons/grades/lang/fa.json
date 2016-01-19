@@ -1,9 +1,14 @@
 {
     "average": "میانگین",
+    "contributiontocoursetotal": "Contribution to course total",	
     "feedback": "بازخورد",
     "grade": "نمره",
     "grades": "نمرات",
     "itemname": "نام مورد",
+    "lettergrade": "Letter grade",
     "percentage": "درصد",
-    "range": "محدوده"
+    "rank": "Rank",
+    "range": "محدوده",
+    "viewgrades": "View grades",
+    "weight": "Weight"
 }

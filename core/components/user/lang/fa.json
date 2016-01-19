@@ -5,11 +5,16 @@
     "country": "کشور",
     "description": "توضیحات",
     "details": "جزئیات",
+    "detailsnotavailable": "The details of this user are not available to you.",
+    "editingteacher": "Teacher",
     "email": "ایمیل",
     "interests": "علایق",
+    "invaliduser": "Invalid user.",
+    "manager": "Manager",
     "phone1": "تلفن",
     "phone2": "همراه",
     "roles": "نقش‌ها",
     "student": "شاگرد",
+    "teacher": "Non-editing teacher",
     "webpage": "صفحهٔ وب"
 }
