@@ -2315,10 +2315,10 @@ angular.module('mm.core')
                     }
                     return language;
                 }, function() {
-                    return mmCoreConfigConstants.default_lang || 'fa';
+                    return mmCoreConfigConstants.default_lang || 'en';
                 });
             } catch(err) {
-                return mmCoreConfigConstants.default_lang || 'fa';
+                return mmCoreConfigConstants.default_lang || 'en';
             }
         }).then(function(language) {
             currentLanguage = language;
